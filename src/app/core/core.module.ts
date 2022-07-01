@@ -6,9 +6,13 @@ import { LoginModule } from '../login/login.module';
 import { MessagingModule } from '../messaging/messaging.module';
 import { ProfilModule } from '../profil/profil.module';
 import { TrendModule } from '../trend/trend.module';
+import { UiModule } from '../ui/ui.module';
+import { FooterComponent } from './components/footer/footer.component';
+import { HeaderComponent } from './components/header/header.component';
+import { NavComponent } from './components/nav/nav.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [HeaderComponent, NavComponent, FooterComponent],
   imports: [CommonModule],
   exports: [
     LoginModule,
@@ -17,6 +21,10 @@ import { TrendModule } from '../trend/trend.module';
     TrendModule,
     ProfilModule,
     CreatePostModule,
+    HeaderComponent,
+    NavComponent,
+    FooterComponent,
+    UiModule,
   ],
 })
 export class CoreModule {}

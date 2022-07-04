@@ -3,13 +3,18 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-ui',
   templateUrl: './ui.component.html',
-  styleUrls: ['./ui.component.scss']
+  styleUrls: ['./ui.component.scss'],
 })
 export class UiComponent implements OnInit {
+  public closeAside: boolean;
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor() {
+    this.closeAside = false;
   }
 
+  public toggleNav(): void {
+    this.closeAside = !this.closeAside;
+  }
+
+  ngOnInit(): void {}
 }

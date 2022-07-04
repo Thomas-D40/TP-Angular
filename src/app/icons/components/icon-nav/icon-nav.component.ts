@@ -1,15 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-
+import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
+import { faNavicon } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-icon-nav',
   templateUrl: './icon-nav.component.html',
-  styleUrls: ['./icon-nav.component.scss']
+  styleUrls: ['./icon-nav.component.scss'],
 })
 export class IconNavComponent implements OnInit {
+  public myIcon: IconDefinition;
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor() {
+    this.myIcon = faNavicon;
   }
 
+  ngOnInit(): void {}
 }

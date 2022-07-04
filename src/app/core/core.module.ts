@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { CreatePostModule } from '../create-post/create-post.module';
 import { FriendListModule } from '../friend-list/friend-list.module';
+import { IconsModule } from '../icons/icons.module';
 import { LoginModule } from '../login/login.module';
 import { MessagingModule } from '../messaging/messaging.module';
 import { ProfilModule } from '../profil/profil.module';
@@ -25,6 +26,7 @@ import { NavComponent } from './components/nav/nav.component';
     NavComponent,
     FooterComponent,
     UiModule,
+    IconsModule,
   ],
 })
 export class CoreModule {}
